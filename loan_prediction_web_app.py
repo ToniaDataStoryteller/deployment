@@ -4,7 +4,7 @@ import streamlit as st
 
 ## Loading the saved model - right click on the file name on the left here in VSCode and click on path. 
 # Paste the copied path below for the file to be opened.
-loaded_model = pickle.load(open(r"C:\Users\pc\Desktop\GoMyCode\loan_prediction_model_v2.pkl", "rb")) # rb means read binary
+loaded_model = pickle.load(open("loan_prediction_model_v2.pkl", "rb")) # rb means read binary
 
 def loan_prediction(input_data):
         
