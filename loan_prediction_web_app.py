@@ -50,9 +50,9 @@ def main():
 
     if st.button("Loan status"):
         performance = loan_prediction(
-            [gender, married, education,self_employed, applicant_income, coapplicant_income, loan_amount, 
-                loan_amount_term, dependents_1, dependents_2, dependents_3, credit_history, property_area_Semiurban, 
-                property_area_Urban])
+            [int(gender), int(married), int(education),int(self_employed), int(applicant_income), int(coapplicant_income), int(loan_amount), 
+                int(loan_amount_term), int(dependents_1), int(dependents_2), int(dependents_3), int(credit_history), int(property_area_Semiurban), 
+                int(property_area_Urban)])
         
         st.success(performance)
 
